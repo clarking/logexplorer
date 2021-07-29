@@ -1,0 +1,104 @@
+{
+  "colors": [
+    {
+      "debug": {
+        "fg": "black",
+        "bg": "blue"
+      }
+    },
+    {
+      "info": {
+        "fg": "white",
+        "bg": "blue"
+      }
+    },
+    {
+      "warn": {
+        "fg": "blue",
+        "bg": "yellow"
+      }
+    },
+    {
+      "trace": {
+        "fg": "white",
+        "bg": "blue"
+      }
+    },
+    {
+      "error": {
+        "fg": "white",
+        "bg": "red"
+      }
+    }
+  ],
+  "filters": [
+    {
+      "name": "Errors",
+      "match": {
+        "column": "level",
+        "text": "E"
+      }
+    }
+  ],
+  "parsing": {
+    "separator" : "|"
+  },
+  "window": {
+    "theme": {
+      "colors": {
+        "primary": "",
+        "secondary": "",
+        "accent": "",
+        "alt": ""
+      }
+    },
+    "geometry": "800x600",
+    "font": {
+      "family": "Calibri",
+      "size": "10"
+    },
+    "grid": {
+      "font": {
+        "family": "Calibri",
+        "size": "10"
+      },
+      "columns": [
+        {
+          "name": "thread",
+          "parent": "",
+          "fg": "black",
+          "bg": "blue",
+          "header": "Thread",
+          "width": 70,
+          "stretch": 0
+        },
+        {
+          "name": "level",
+          "parent": "thread",
+          "fg": "white",
+          "bg": "blue",
+          "header": "Level",
+          "width": 60,
+          "stretch": 0
+        },
+        {
+          "name": "message",
+          "parent": "thread",
+          "fg": "blue",
+          "bg": "yellow",
+          "header": "Message",
+          "stretch": 1
+        },
+        {
+          "name": "date",
+          "parent": "thread",
+          "fg": "white",
+          "bg": "blue",
+          "header": "Date",
+          "width": 100,
+          "stretch": 0
+        }
+      ]
+    }
+  }
+}
